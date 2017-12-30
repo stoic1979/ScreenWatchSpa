@@ -8,6 +8,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import FontIcon from 'material-ui/FontIcon';
 import PersonAdd from 'material-ui/svg-icons/social/person-add';
+import FileUpload from 'material-ui/svg-icons/file/attachment';
 
 
 
@@ -62,7 +63,7 @@ class App extends Component {
             <Drawer width={245} open={this.state.open}>  
               <AppBar title="SCREEN  WATCH" showMenuIconButton={false}/>
                 <MenuItem href="/users" leftIcon={<PersonAdd />} >Users</MenuItem>
-              
+                <MenuItem href="/fileUpload" leftIcon={<FileUpload />} >File Upload</MenuItem>
             </Drawer>
             <hr />
             <Routes/>
