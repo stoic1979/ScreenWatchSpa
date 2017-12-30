@@ -7,6 +7,7 @@ import MenuItem from 'material-ui/MenuItem';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import AppBar from 'material-ui/AppBar';
 import FontIcon from 'material-ui/FontIcon';
+import PersonAdd from 'material-ui/svg-icons/social/person-add';
 
 
 
@@ -60,7 +61,7 @@ class App extends Component {
             />
             <Drawer width={245} open={this.state.open}>  
               <AppBar title="SCREEN  WATCH" showMenuIconButton={false}/>
-              
+                <MenuItem href="/users" leftIcon={<PersonAdd />} >Users</MenuItem>
               
             </Drawer>
             <hr />
